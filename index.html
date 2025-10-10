@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rong Zhang — Personal Website</title>
-  <meta name="description" content="Personal website / academic portfolio" />
+  <meta name="description" content="Personal website / academic portfolio of Rong Zhang" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
     section{padding:18px 0}
     section h3{font-size:22px;margin:0 0 12px}
     .grid{display:grid;gap:16px}
-    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid.cols-1{grid-template-columns:1fr}
     .item{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:16px}
     .item h4{margin:0 0 6px;font-size:18px}
     .meta{font-size:14px;color:var(--muted)}
@@ -50,7 +50,6 @@
 
     @media (max-width: 900px){
       .hero{grid-template-columns:1fr}
-      .grid.cols-2{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -58,7 +57,7 @@
   <div class="container">
     <header>
       <div class="brand">
-        <img class="avatar" src="images/avatar.jpg" alt="Your portrait (replace images/avatar.jpg)" onerror="this.style.display='none'">
+        <img class="avatar" src="images/avatar.jpg" alt="Portrait of Rong Zhang" onerror="this.style.display='none'">
         <div>
           <h1>Rong Zhang</h1>
           <div class="tag">Ph.D. Candidate · Industrial Organization · Texas A&M University</div>
@@ -73,8 +72,8 @@
 
     <section class="hero" id="home">
       <div class="card">
-        <h2>Hi, I’m Your Name.</h2>
-        <p class="muted">I study market structure, pricing, and consumer behavior. My current work examines <em>implicit market segmentation</em> and welfare effects in consumer packaged goods using scanner data and structural IO models.</p>
+        <h2>Hi, I’m Rong Zhang.</h2>
+        <p class="muted">I am a Ph.D. candidate in Agricultural and Applied Economics at Texas A&M University. My research focuses on market structure, pricing strategies, and consumer behavior, with a particular emphasis on <em>implicit market segmentation</em> and welfare implications in consumer packaged goods. You can download my CV <a href="files/CV.pdf" target="_blank"><strong>here</strong></a>.</p>
         <div class="cta">
           <a class="btn primary" href="#research">See my research</a>
           <a class="btn" href="#teaching">My teaching</a>
@@ -91,16 +90,24 @@
 
     <section id="research">
       <h3>Research</h3>
-      <div class="grid cols-2">
+      <h4>Working Papers</h4>
+      <div class="grid cols-1">
         <div class="item">
-          <h4>Implicit Market Segmentation and Prices in CPG</h4>
-          <div class="meta">Job Market Paper · 2025 · <a href="files/jmp.pdf">PDF</a></div>
-          <p>Combines scanner data with random-coefficients demand to separate product differentiation from price discrimination; counterfactuals quantify welfare effects.</p>
+          <h4>Price Discrimination and Implicit Market Segmentation in Consumer Packaged Goods</h4>
+          <div class="meta">Job Market Paper, with Yvette Zhang</div>
+          <p><strong>Abstract:</strong> Implicit market segmentation is a marketing and pricing practice in which firms use indirect cues, such as product design, packaging or branding, to segment the market based on inferred preferences, rather than on explicit observable characteristics. This practice is widely used in consumer packaged goods and it can involve both second-degree and third-degree price discrimination, which together can generate ambiguous welfare effects. Yet most existing empirical studies consider these two forms of price discrimination separately, leaving open the question of how they interact when deployed together. This paper constructs a structural model to assess the price discrimination pattern and welfare effects of implicit market segmentation. The empirical estimation analyzes implicit market segmentation in consumer packaged goods using scanner data on toothbrushes. We find that implicit market segmentation leads to price differences across markets, and these differences are jointly sustained by third-degree and second-degree price discrimination. By conducting a counterfactual analysis, we find that eliminating the segmentation would increase consumer surplus but reduce producer surplus, resulting in a net welfare gain.</p>
         </div>
+
         <div class="item">
-          <h4>Wholesale Price Discrimination with Interacting Retail Costs</h4>
-          <div class="meta">Working Paper · 2025 · <a href="files/wp1.pdf">PDF</a></div>
-          <p>Vertical model of manufacturer–retailer relationships with locally correlated costs; uniform pricing policy experiments.</p>
+          <h4>Educational Assortative Matching and Income Inequality in China</h4>
+          <div class="meta">With Song Zhou and Yvette Zhang</div>
+          <p><strong>Abstract:</strong> This paper investigates the paradoxical trend in China where educational assortative matching is rising, yet the national Gini coefficient for household income has modestly declined since 2010. Using survey data from 2010 to 2018, we first document that the increasing tendency for highly-educated spouses to pair substantially raises the potential for income inequality. We then identify a key moderating mechanism: the female labor force participation (FLFP) and average work hours among married women. While this shift has only a modest effect on income inequality, our findings reveal a deeper polarization in the marriage market. Rising assortative matching concentrates high-earning potential into a small, elite group of highly-educated couples. The subsequent decline in FLFP is disproportionately a lifestyle choice made within these high-income households, where the combined potential income is sufficient for the wife to withdraw from the labor market. This voluntary labor supply moderation effectively dampens the full amplification effect of sorting on the top end of the distribution. In contrast, lower- and middle-income households continue to rely on two earners.</p>
+        </div>
+
+        <div class="item">
+          <h4>Welfare Effects of Wholesale Price Discrimination Under Economies of Scale</h4>
+          <div class="meta">With Mengjie Li and Yvette Zhang</div>
+          <p><strong>Abstract:</strong> This paper investigates the welfare implications of wholesale price discrimination (WPD) in vertical markets, focusing on how economies of scale influence the outcome. Wholesale price discrimination often exploits differences in downstream retailers’ demand elasticities or operational efficiencies. When WPD is based on retailers’ cost differences, it can lead to allocative inefficiency by shifting production from more efficient, lower-cost retailers to less efficient, higher-cost rivals. This misallocation tends to reduce social welfare. Conversely, WPD can also lead to a welfare improvement through market expansion. In this context, WPD acts as a critical mechanism for exploiting scale economies to serve previously unprofitable segments. In this paper, we propose a structural model of a vertical market to estimate demand, supply behavior, and non-constant marginal costs reflecting economies of scale. Counterfactual simulations are then used to quantify the change in total welfare under a mandatory uniform wholesale price regime versus the observed discriminatory regime. The findings are crucial for antitrust policy, as they determine whether WPD acts primarily as an anti-competitive tool to stifle efficient retailers or as a pro-competitive mechanism to leverage economies of scale and expand market coverage.</p>
         </div>
       </div>
     </section>
@@ -108,8 +115,13 @@
     <section id="teaching">
       <h3>Teaching</h3>
       <ul class="list">
-        <li><strong>AGEC 625 — Applied Micro II</strong> (TA, Spring 2024)</li>
-        <li><strong>AGEC 350 — Microeconomic Principles</strong> (TA, F2023/S2024)</li>
+        <li><strong>INTA Capstone Research Course for Master of International Affairs Students</strong> (TA, Spring 2022, Graduate level): Meet weekly with students to assist with programming projects and provide R programming support.</li>
+        <li><strong>AGEC 625 — Environment of Agribusiness</strong> (TA, Spring 2024, Graduate level): Hold office hours, assist with R programming for final projects, and grade assignments.</li>
+        <li><strong>AGEC 350 — Environmental and Natural Resource Economics</strong> (TA, Fall 2022 & Spring 2023, Undergraduate level): Deliver review lectures, coordinate guest speakers, assist in class activities, and grade assignments and exams.</li>
+        <li><strong>AGEC 440 — Agribusiness Strategic Analysis</strong> (TA, Fall 2022 & Spring 2024, Undergraduate level)</li>
+        <li><strong>AGEC 325 — Principles of Farm and Ranch Management</strong> (TA, Fall 2024, Undergraduate level)</li>
+        <li><strong>AGEC 431 — Cases in Agribusiness Finance</strong> (TA, Fall 2023, Undergraduate level)</li>
+        <li><strong>AGEC 340 — Agribusiness Management</strong> (TA, Spring 2025, Undergraduate level)</li>
       </ul>
     </section>
 
