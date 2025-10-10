@@ -10,47 +10,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#ffffff; --card:#f9f9fb; --muted:#555; --text:#111; --brand:#4f46e5; --brand-2:#14b8a6;
-      --shadow:0 10px 25px rgba(0,0,0,.1);
+      --bg:#ffffff; --muted:#555; --text:#111; --brand:#1f4ad7;
     }
     *{box-sizing:border-box}
     html,body{margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--text)}
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
-    .container{max-width:1080px;margin:0 auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0}
+
+    .container{max-width:960px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 24px}
     .brand{display:flex;align-items:center;gap:14px}
-    .avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid rgba(0,0,0,.05)}
+    .avatar{width:56px;height:56px;border-radius:50%;object-fit:cover}
     h1{font-size:28px;margin:0}
     .tag{color:var(--muted);font-weight:500}
     nav{display:flex;gap:18px;flex-wrap:wrap}
-    nav a{padding:8px 10px;border-radius:10px}
-    nav a:hover{background:rgba(0,0,0,.05);text-decoration:none}
+    nav a{padding:6px 8px;border-radius:8px}
 
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:24px 0}
-    .card{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
-    .hero h2{font-size:36px;margin:0 0 8px}
-    .muted{color:var(--muted)}
-    .cta{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;font-weight:600;border:1px solid rgba(0,0,0,.1)}
-    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;border:none}
-
+    /* simple sections */
     section{padding:18px 0}
     section h3{font-size:22px;margin:0 0 12px}
-    .grid{display:grid;gap:16px}
-    .grid.cols-1{grid-template-columns:1fr}
-    .item{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:16px}
-    .item h4{margin:0 0 6px;font-size:18px}
-    .meta{font-size:14px;color:var(--muted)}
+    .list{display:grid;gap:10px;padding-left:18px}
+    .list li{margin:0}
 
-    .list{display:grid;gap:12px}
-    .list li{background:var(--card);border:1px solid rgba(0,0,0,.08);padding:14px;border-radius:14px}
-
-    footer{padding:30px 0;color:var(--muted);font-size:14px;text-align:center}
-
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-    }
+    /* flat hero (no box, no shadow) */
+    .hero{display:block;padding:8px 0}
+    .hero h2{font-size:40px;margin:0 0 10px}
+    .muted{color:var(--muted)}
   </style>
 </head>
 <body>
@@ -71,67 +56,18 @@
     </header>
 
     <section class="hero" id="home">
-      <div class="card">
-        <h2>Hi, I’m Rong Zhang.</h2>
-        <p class="muted">I am a Ph.D. candidate in Agricultural and Applied Economics at Texas A&M University. My research focuses on market structure, pricing strategies, and consumer behavior, with a particular emphasis on <em>implicit market segmentation</em> and welfare implications in consumer packaged goods. You can download my CV <a href="files/CV.pdf" target="_blank"><strong>here</strong></a>.</p>
-        <div class="cta">
-          <a class="btn primary" href="#research">See my research</a>
-          <a class="btn" href="#teaching">My teaching</a>
-        </div>
-      </div>
-      <div class="card">
-        <h3 style="margin-top:0">News</h3>
-        <ul class="list" style="margin:0;padding-left:18px">
-          <li><strong>Oct 2025:</strong> Job market paper draft updated; slides posted.</li>
-          <li><strong>Sep 2025:</strong> Presented at XYZ Conference; new preprint on price discrimination.</li>
-        </ul>
-      </div>
+      <h2>Hi, I’m Rong Zhang.</h2>
+      <p class="muted">I am a Ph.D. candidate in Agricultural and Applied Economics at Texas A&M University. My research focuses on market structure, pricing strategies, and consumer behavior, with a particular emphasis on <em>implicit market segmentation</em> and welfare implications in consumer packaged goods. You can download my CV <a href="files/CV.pdf" target="_blank"><strong>here</strong></a>.</p>
     </section>
 
     <section id="research">
       <h3>Research</h3>
       <h4>Working Papers</h4>
-      <div class="grid cols-1">
-        <div class="item">
-          <h4>Price Discrimination and Implicit Market Segmentation in Consumer Packaged Goods</h4>
-          <div class="meta">Job Market Paper, with Yvette Zhang</div>
-          <p><strong>Abstract:</strong> Implicit market segmentation is a marketing and pricing practice in which firms use indirect cues, such as product design, packaging or branding, to segment the market based on inferred preferences, rather than on explicit observable characteristics. This practice is widely used in consumer packaged goods and it can involve both second-degree and third-degree price discrimination, which together can generate ambiguous welfare effects. Yet most existing empirical studies consider these two forms of price discrimination separately, leaving open the question of how they interact when deployed together. This paper constructs a structural model to assess the price discrimination pattern and welfare effects of implicit market segmentation. The empirical estimation analyzes implicit market segmentation in consumer packaged goods using scanner data on toothbrushes. We find that implicit market segmentation leads to price differences across markets, and these differences are jointly sustained by third-degree and second-degree price discrimination. By conducting a counterfactual analysis, we find that eliminating the segmentation would increase consumer surplus but reduce producer surplus, resulting in a net welfare gain.</p>
-        </div>
+      <div>
+        <h4>Price Discrimination and Implicit Market Segmentation in Consumer Packaged Goods</h4>
+        <div class="muted">Job Market Paper, with Yvette Zhang</div>
+        <p><strong>Abstract:</strong> Implicit market segmentation is a marketing and pricing practice in which firms use indirect cues, such as product design, packaging or branding, to segment the market based on inferred preferences, rather than on explicit observable characteristics. This practice is widely used in consumer packaged goods and it can involve both second-degree and third-degree price discrimination, which together can generate ambiguous welfare effects. Yet most existing empirical studies consider these two forms of price discrimination separately, leaving open the question of how they interact when deployed together. This paper constructs a structural model to assess the price discrimination pattern and welfare effects of implicit market segmentation. The empirical estimation analyzes implicit market segmentation in consumer packaged goods using scanner data on toothbrushes. We find that implicit market segmentation leads to price differences across markets, and these differences are jointly sustained by third-degree and second-degree price discrimination. By conducting a counterfactual analysis, we find that eliminating the segmentation would increase consumer surplus but reduce producer surplus, resulting in a net welfare gain.</p>
 
-        <div class="item">
-          <h4>Educational Assortative Matching and Income Inequality in China</h4>
-          <div class="meta">With Song Zhou and Yvette Zhang</div>
-          <p><strong>Abstract:</strong> This paper investigates the paradoxical trend in China where educational assortative matching is rising, yet the national Gini coefficient for household income has modestly declined since 2010. Using survey data from 2010 to 2018, we first document that the increasing tendency for highly-educated spouses to pair substantially raises the potential for income inequality. We then identify a key moderating mechanism: the female labor force participation (FLFP) and average work hours among married women. While this shift has only a modest effect on income inequality, our findings reveal a deeper polarization in the marriage market. Rising assortative matching concentrates high-earning potential into a small, elite group of highly-educated couples. The subsequent decline in FLFP is disproportionately a lifestyle choice made within these high-income households, where the combined potential income is sufficient for the wife to withdraw from the labor market. This voluntary labor supply moderation effectively dampens the full amplification effect of sorting on the top end of the distribution. In contrast, lower- and middle-income households continue to rely on two earners.</p>
-        </div>
-
-        <div class="item">
-          <h4>Welfare Effects of Wholesale Price Discrimination Under Economies of Scale</h4>
-          <div class="meta">With Mengjie Li and Yvette Zhang</div>
-          <p><strong>Abstract:</strong> This paper investigates the welfare implications of wholesale price discrimination (WPD) in vertical markets, focusing on how economies of scale influence the outcome. Wholesale price discrimination often exploits differences in downstream retailers’ demand elasticities or operational efficiencies. When WPD is based on retailers’ cost differences, it can lead to allocative inefficiency by shifting production from more efficient, lower-cost retailers to less efficient, higher-cost rivals. This misallocation tends to reduce social welfare. Conversely, WPD can also lead to a welfare improvement through market expansion. In this context, WPD acts as a critical mechanism for exploiting scale economies to serve previously unprofitable segments. In this paper, we propose a structural model of a vertical market to estimate demand, supply behavior, and non-constant marginal costs reflecting economies of scale. Counterfactual simulations are then used to quantify the change in total welfare under a mandatory uniform wholesale price regime versus the observed discriminatory regime. The findings are crucial for antitrust policy, as they determine whether WPD acts primarily as an anti-competitive tool to stifle efficient retailers or as a pro-competitive mechanism to leverage economies of scale and expand market coverage.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="teaching">
-      <h3>Teaching</h3>
-      <ul class="list">
-        <li><strong>INTA Capstone Research Course for Master of International Affairs Students</strong> (TA, Spring 2022, Graduate level): Meet weekly with students to assist with programming projects and provide R programming support.</li>
-        <li><strong>AGEC 625 — Environment of Agribusiness</strong> (TA, Spring 2024, Graduate level): Hold office hours, assist with R programming for final projects, and grade assignments.</li>
-        <li><strong>AGEC 350 — Environmental and Natural Resource Economics</strong> (TA, Fall 2022 & Spring 2023, Undergraduate level): Deliver review lectures, coordinate guest speakers, assist in class activities, and grade assignments and exams.</li>
-        <li><strong>AGEC 440 — Agribusiness Strategic Analysis</strong> (TA, Fall 2022 & Spring 2024, Undergraduate level)</li>
-        <li><strong>AGEC 325 — Principles of Farm and Ranch Management</strong> (TA, Fall 2024, Undergraduate level)</li>
-        <li><strong>AGEC 431 — Cases in Agribusiness Finance</strong> (TA, Fall 2023, Undergraduate level)</li>
-        <li><strong>AGEC 340 — Agribusiness Management</strong> (TA, Spring 2025, Undergraduate level)</li>
-      </ul>
-    </section>
-
-    <footer>
-      © <span id="y"></span> Rong Zhang · Built with HTML/CSS · Deployed on GitHub Pages
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('y').textContent=new Date().getFullYear();
-  </script>
-</body>
-</html>
+        <h4>Educational Assortative Matching and Income Inequality in China</h4>
+        <div class="muted">With Song Zhou and Yvette Zhang</div>
+        <p><strong>Abstract:</strong> This paper investigates the paradoxical trend in China where educational assortative matching is rising, yet the national Gini coefficient for household income has modestly declined since 2010. Using survey data from 2010 to 2018, we first document that the increasing tendency for highly-educated spouses to pair substantially raises the potential for income inequality. We then identify a key moderating mechanism: the female labor force participation (FLFP) and average work hours among married women. While this shift has only a modest effect on income inequality, our findings reveal a deeper polarization in the marriage market. Rising assortative matching concentrates high-earning potential into a small, elite group of highly-educated couples. The subsequent decline in FLFP is disproportionately a lifestyle choice made within these high-income households, where the combined potential income is sufficient for the wife to withdraw from the labor market. This voluntary labor supply moderation effectively dampens the full amplification effect of sorting on the top end of the distribu
