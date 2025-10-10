@@ -1,1 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Personal Website</title>
+  <meta name="description" content="Personal website / academic portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --card:#f9f9fb; --muted:#555; --text:#111; --brand:#4f46e5; --brand-2:#14b8a6;
+      --shadow:0 10px 25px rgba(0,0,0,.1);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid rgba(0,0,0,.05)}
+    h1{font-size:28px;margin:0}
+    .tag{color:var(--muted);font-weight:500}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{padding:8px 10px;border-radius:10px}
+    nav a:hover{background:rgba(0,0,0,.05);text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:24px 0}
+    .card{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+    .hero h2{font-size:36px;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .cta{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;font-weight:600;border:1px solid rgba(0,0,0,.1)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;border:none}
+
+    section{padding:18px 0}
+    section h3{font-size:22px;margin:0 0 12px}
+    .grid{display:grid;gap:16px}
+    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .item{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:16px}
+    .item h4{margin:0 0 6px;font-size:18px}
+    .meta{font-size:14px;color:var(--muted)}
+
+    .list{display:grid;gap:12px}
+    .list li{background:var(--card);border:1px solid rgba(0,0,0,.08);padding:14px;border-radius:14px}
+
+    footer{padding:30px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid.cols-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img class="avatar" src="images/avatar.jpg" alt="Your portrait (replace images/avatar.jpg)" onerror="this.style.display='none'">
+        <div>
+          <h1>Your Name</h1>
+          <div class="tag">Ph.D. Candidate · Industrial Organization · Texas A&M University</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="card">
+        <h2>Hi, I’m Your Name.</h2>
+        <p class="muted">I study market structure, pricing, and consumer behavior. My current work examines <em>implicit market segmentation</em> and welfare effects in consumer packaged goods using scanner data and structural IO models.</p>
+        <div class="cta">
+          <a class="btn primary" href="#research">See my research</a>
+          <a class="btn" href="#teaching">My teaching</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">News</h3>
+        <ul class="list" style="margin:0;padding-left:18px">
+          <li><strong>Oct 2025:</strong> Job market paper draft updated; slides posted.</li>
+          <li><strong>Sep 2025:</strong> Presented at XYZ Conference; new preprint on price discrimination.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="research">
+      <h3>Research</h3>
+      <div class="grid cols-2">
+        <div class="item">
+          <h4>Implicit Market Segmentation and Prices in CPG</h4>
+          <div class="meta">Job Market Paper · 2025 · <a href="files/jmp.pdf">PDF</a></div>
+          <p>Combines scanner data with random-coefficients demand to separate product differentiation from price discrimination; counterfactuals quantify welfare effects.</p>
+        </div>
+        <div class="item">
+          <h4>Wholesale Price Discrimination with Interacting Retail Costs</h4>
+          <div class="meta">Working Paper · 2025 · <a href="files/wp1.pdf">PDF</a></div>
+          <p>Vertical model of manufacturer–retailer relationships with locally correlated costs; uniform pricing policy experiments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h3>Teaching</h3>
+      <ul class="list">
+        <li><strong>AGEC 625 — Applied Micro II</strong> (TA, Spring 2024)</li>
+        <li><strong>AGEC 350 — Microeconomic Principles</strong> (TA, F2023/S2024)</li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Your Name · Built with HTML/CSS · Deployed on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
 
