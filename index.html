@@ -19,8 +19,9 @@
 
     .container{max-width:960px;margin:0 auto;padding:28px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 24px}
-    .brand{display:flex;align-items:center;gap:14px}
+    .brand{display:flex;align-items:flex-start;flex-direction:column;gap:4px}
     h1{font-size:28px;margin:0}
+    .email{font-size:15px;color:var(--text);margin:0}
     nav{display:flex;gap:18px;flex-wrap:wrap}
     nav a{padding:6px 8px;border-radius:8px}
 
@@ -46,9 +47,8 @@
   <div class="container">
     <header>
       <div class="brand">
-        <div>
-          <h1>Rong Zhang</h1>
-        </div>
+        <h1>Rong Zhang</h1>
+        <p class="email">rongzhang@tamu.edu</p>
       </div>
       <nav>
         <a href="#home">Home</a>
