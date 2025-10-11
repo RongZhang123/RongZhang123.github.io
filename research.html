@@ -1,1 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rong Zhang — Research</title>
+  <meta name="description" content="Research by Rong Zhang, PhD Candidate in Agricultural Economics at Texas A&M University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#ffffff; --muted:#555; --text:#111; --brand:#1f4ad7; --card:#f9f9fb; }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter, system-ui,-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:960px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 24px}
+    .brand{display:flex;align-items:flex-start;flex-direction:column;gap:4px}
+    h1{font-size:28px;margin:0}
+    .email{font-size:15px;color:var(--text);margin:0}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{padding:6px 8px;border-radius:8px}
+
+    section{padding:18px 0}
+    #research{background:var(--card);border-radius:20px;padding:24px;margin-top:0}
+    .muted{color:var(--muted)}
+    .subhead{
+      font-size:20px;font-weight:700;margin:12px 0 10px;
+      padding-bottom:4px;border-bottom:1px solid #ccc;
+    }
+    .paper-title{font-size:18px;font-weight:700;margin:14px 0 6px}
+    html{scroll-behavior:smooth}
+    footer{margin-top:24px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Rong Zhang</h1>
+        <p class="email">
+          Department of Agricultural Economics, Texas A&M University<br>
+          rongzhang@tamu.edu<br>
+          <small>Last updated: <span id="lastUpdated"></span></small>
+        </p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+      </nav>
+    </header>
+
+    <section id="research">
+      <h3>Research</h3>
+
+      <h4 class="subhead">Working Papers</h4>
+      <div>
+        <h5 class="paper-title">Price Discrimination and Implicit Market Segmentation in Consumer Packaged Goods</h5>
+        <div class="muted">Job Market Paper, with Yvette Zhang</div>
+        <p style="text-align: justify; line-height: 1.6;"><strong>Abstract:</strong> Implicit market segmentation is a marketing and pricing practice in which firms use indirect cues, such as product design, packaging or branding, to segment the market based on inferred preferences, rather than on explicit observable characteristics. This practice is widely used in consumer packaged goods and it can involve both second-degree and third-degree price discrimination, which together can generate ambiguous welfare effects. Yet most existing empirical studies consider these two forms of price discrimination separately, leaving open the question of how they interact when deployed together. This paper constructs a structural model to assess the price discrimination pattern and welfare effects of implicit market segmentation. The empirical estimation analyzes implicit market segmentation in consumer packaged goods using scanner data on toothbrushes. We find that implicit market segmentation leads to price differences across markets, and these differences are jointly sustained by third-degree and second-degree price discrimination. By conducting a counterfactual analysis, we find that eliminating the segmentation would increase consumer surplus but reduce producer surplus, resulting in a net welfare gain.</p>
+
+        <h5 class="paper-title">Educational Assortative Matching and Income Inequality in China</h5>
+        <div class="muted">With Song Zhou and Yvette Zhang</div>
+        <p style="text-align: justify; line-height: 1.6;"><strong>Abstract:</strong> This paper investigates the paradoxical trend in China where educational assortative matching is rising, yet the national Gini coefficient for household income has modestly declined since 2010. Using survey data from 2010 to 2018, we first document that the increasing tendency for highly-educated spouses to pair substantially raises the potential for income inequality. We then identify a key moderating mechanism: the female labor force participation (FLFP) and average work hours among married women. While this shift has only a modest effect on income inequality, our findings reveal a deeper polarization in the marriage market. Rising assortative matching concentrates high-earning potential into a small, elite group of highly-educated couples. The subsequent decline in FLFP is disproportionately a lifestyle choice made within these high-income households, where the combined potential income is sufficient for the wife to withdraw from the labor market. This voluntary labor supply moderation effectively dampens the full amplification effect of sorting on the top end of the distribution. In contrast, lower- and middle-income households continue to rely on two earners.</p>
+      </div>
+
+      <h4 class="subhead">Work in Progress</h4>
+      <div>
+        <h5 class="paper-title">Welfare Effects of Wholesale Price Discrimination Under Economies of Scale</h5>
+        <div class="muted">With Mengjie Li and Yvette Zhang</div>
+        <p style="text-align: justify; line-height: 1.6;"><strong>Abstract:</strong> This paper investigates the welfare implications of wholesale price discrimination (WPD) in vertical markets, focusing on how economies of scale influence the outcome. Wholesale price discrimination often exploits differences in downstream retailers’ demand elasticities or operational efficiencies. When WPD is based on retailers’ cost differences, it can lead to allocative inefficiency by shifting production from more efficient, lower-cost retailers to less efficient, higher-cost rivals. This misallocation tends to reduce social welfare. Conversely, WPD can also lead to a welfare improvement through market expansion. In this context, WPD acts as a critical mechanism for exploiting scale economies to serve previously unprofitable segments. In this paper, we propose a structural model of a vertical market to estimate demand, supply behavior, and non-constant marginal costs reflecting economies of scale. Counterfactual simulations are then used to quantify the change in total welfare under a mandatory uniform wholesale price regime versus the observed discriminatory regime. The findings are crucial for antitrust policy, as they determine whether WPD acts primarily as an anti-competitive tool to stifle efficient retailers or as a pro-competitive mechanism to leverage economies of scale and expand market coverage.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Rong Zhang · Built with HTML/CSS · Deployed on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const d = new Date(document.lastModified);
+    const el = document.getElementById('lastUpdated');
+    if (el) el.textContent = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  </script>
+</body>
+</html>
 
