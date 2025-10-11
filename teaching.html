@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rong Zhang — Teaching</title>
+  <meta name="description" content="Teaching by Rong Zhang, PhD Candidate in Agricultural Economics at Texas A&M University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#ffffff; --muted:#555; --text:#111; --brand:#1f4ad7; --card:#f9f9fb; }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter, system-ui,-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:960px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 24px}
+    .brand{display:flex;align-items:flex-start;flex-direction:column;gap:4px}
+    h1{font-size:28px;margin:0}
+    .email{font-size:15px;color:var(--text);margin:0}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{padding:6px 8px;border-radius:8px}
+    section{padding:18px 0}
+    .list{display:grid;gap:14px;padding-left:18px}
+    footer{margin-top:24px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Rong Zhang</h1>
+        <p class="email">
+          Department of Agricultural Economics, Texas A&M University<br>
+          rongzhang@tamu.edu<br>
+          <small>Last updated: <span id="lastUpdated"></span></small>
+        </p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+      </nav>
+    </header>
+
+    <section id="teaching">
+      <h3>Teaching</h3>
+      <ul class="list">
+        <li><strong>INTA Capstone Research Course for Master of International Affairs Students</strong> (TA, Spring 2022, Graduate level):<br>Meet weekly with students to assist with programming projects and provide R programming support.</li>
+        <li><strong>AGEC 625 — Environment of Agribusiness</strong> (TA, Spring 2024, Graduate level):<br>Hold office hours, assist with R programming for final projects, and grade assignments.</li>
+        <li><strong>AGEC 350 — Environmental and Natural Resource Economics</strong> (TA, Fall 2022 & Spring 2023, Undergraduate level):<br>Deliver review lectures, coordinate guest speakers, assist in class activities, and grade assignments and exams.</li>
+        <li><strong>AGEC 440 — Agribusiness Strategic Analysis</strong> (TA, Fall 2022 & Spring 2024, Undergraduate level)</li>
+        <li><strong>AGEC 325 — Principles of Farm and Ranch Management</strong> (TA, Fall 2024, Undergraduate level)</li>
+        <li><strong>AGEC 431 — Cases in Agribusiness Finance</strong> (TA, Fall 2023, Undergraduate level)</li>
+        <li><strong>AGEC 340 — Agribusiness Management</strong> (TA, Spring 2025, Undergraduate level)</li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Rong Zhang · Built with HTML/CSS · Deployed on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const d = new Date(document.lastModified);
+    const el = document.getElementById('lastUpdated');
+    if (el) el.textContent = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  </script>
+</body>
+</html>
 
