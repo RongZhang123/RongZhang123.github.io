@@ -62,3 +62,18 @@
     <p class="muted"><strong>Research Areas:</strong> Empirical Industrial Organization, Applied Microeconomics, Price Discrimination, Market Structure, Consumer Behavior, Inequality and Labour Market.</p>
   </div>
 </section>
+
+    <footer>
+      © <span id="y"></span> Rong Zhang · Built with HTML/CSS · Deployed on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const d = new Date(document.lastModified);
+    const el = document.getElementById('lastUpdated');
+    if (el) el.textContent = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  </script>
+</body>
+</html>
