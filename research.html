@@ -43,13 +43,6 @@
           rongzhang@tamu.edu<br>
           <small>Last updated: <span id="lastUpdated"></span></small>
         </p>
-        <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    const d = new Date(document.lastModified);
-    const el = document.getElementById('lastUpdated');
-    if (el) el.textContent = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
-  </script>
       </div>
       <nav>
         <a href="index.html">Home</a>
@@ -82,7 +75,15 @@
 
   
   </div>
-
+<script>
+  (function () {
+    var el = document.getElementById('lastUpdated');
+    if (!el) return;
+    var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var d = new Date(document.lastModified);
+    el.textContent = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  })();
+</script>
   
 </body>
 </html>
