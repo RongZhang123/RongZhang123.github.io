@@ -4,33 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rong Zhang — Research</title>
-  <meta name="description" content="Research by Rong Zhang, PhD Candidate in Agricultural Economics at Texas A&M University." />
+  <meta name="description" content="Research by Rong Zhang, Ph.D. Candidate in Agricultural Economics at Texas A&M University." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{ --bg:#ffffff; --muted:#555; --text:#111; --brand:#1f4ad7; --card:#f9f9fb; }
+    :root{--bg:#fff;--muted:#555;--text:#111;--brand:#1f4ad7;--card:#f9f9fb;--border:#ddd}
     *{box-sizing:border-box}
-    html,body{margin:0;font-family:Inter, system-ui,-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--text)}
-    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
     .container{max-width:960px;margin:0 auto;padding:28px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 24px}
     .brand{display:flex;align-items:flex-start;flex-direction:column;gap:4px}
     h1{font-size:28px;margin:0}
-    .email{font-size:15px;color:var(--text);margin:0}
-    nav{display:flex;gap:18px;flex-wrap:wrap}
-    nav a{padding:6px 8px;border-radius:8px}
-
-    section{padding:18px 0}
+    .email{font-size:15px;color:var(--text);margin:0;line-height:1.6}
+    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{padding:6px 8px;border-radius:8px}
     #research{background:var(--card);border-radius:20px;padding:24px;margin-top:0}
-    .muted{color:var(--muted)}
-    .subhead{
-      font-size:20px;font-weight:700;margin:12px 0 10px;
-      padding-bottom:4px;border-bottom:1px solid #ccc;
-    }
-    .paper-title{font-size:18px;font-weight:700;margin:14px 0 6px}
-    html{scroll-behavior:smooth}
-    footer{margin-top:24px}
+    #research>h2{font-size:24px;margin:0 0 20px}
+    .subhead{font-size:20px;font-weight:700;margin:30px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--border)}
+    .subhead:first-of-type{margin-top:12px}
+    .paper{margin:18px 0 24px}
+    .paper-title{font-size:18px;font-weight:700;line-height:1.5;margin:0 0 6px}
+    .paper-meta{font-size:15px;color:var(--muted);line-height:1.6;margin:4px 0}
+    .paper-desc{font-size:15px;line-height:1.7;margin:8px 0}
+    .paper-link{font-size:15px;margin:8px 0}
+    @media(max-width:680px){.container{padding:18px}header{align-items:flex-start;flex-direction:column}#research{padding:18px}}
   </style>
 </head>
 <body>
@@ -38,55 +36,73 @@
     <header>
       <div class="brand">
         <h1>Rong Zhang</h1>
-        <p class="email">
-          Department of Agricultural Economics, Texas A&M University<br>
-          rongzhang@tamu.edu<br>
-          <small>Last updated: <span id="lastUpdated"></span></small>
+        <p class="email">Department of Agricultural Economics, Texas A&amp;M University<br>
+          <a href="mailto:rongzhang@tamu.edu">rongzhang@tamu.edu</a>
         </p>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
+        <a href="research.html" aria-current="page">Research</a>
         <a href="teaching.html">Teaching</a>
+        <a href="files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </nav>
     </header>
 
-    <section id="research">
-      <h3>Research</h3>
+    <main id="research">
+      <h2>Research</h2>
 
-      <h4 class="subhead">Working Papers</h4>
-      <div>
-        <h5 class="paper-title">Price Discrimination, Product Differentiation, and Gender-Based Pricing in Consumer Packaged Goods</h5>
-        <div class="muted">Job Market Paper, with Yvette Zhang</div>
-        <p style="text-align: justify; line-height: 1.6;"><strong>Abstract:</strong> 
-          This paper examines the economic mechanisms underlying persistent price gaps between products marketed to women and men, which is often referred as the "Pink Tax". Using NielsenIQ scanner data on toothbrushes, we provide systematic evidence of gendered price differentials and analyze two mechanisms central to the literature: third-degree price discrimination and product differentiation. We first test for price discrimination by estimating own-price elasticities and exploiting a natural experiment created by New York State’s 2020 legislation banning gender-based pricing. Our results show that women’s products face significantly lower demand elasticities, and the policy intervention reduced but did not eliminate price gaps, consistent with price discrimination literature. We then estimate a random-coefficient demand model to recover marginal costs and markups. These structural results reveal that women’s products are positioned in ways that reduce substitution pressure, leading to higher markups despite lower marginal costs. This pattern indicates that product differentiation, not cost differences, sustains the persistent price disparities. Taken together, our findings show that price discrimination and product differentiation jointly determine gender-based pricing outcomes and that regulatory efforts aimed at banning price discrimination alone may have limited effectiveness when firms also rely on differentiation to sustain markups. 
-        <h5 class="paper-title">Educational Assortative Matching and Income Inequality in China</h5>
-        <div class="muted">With Song Zhou and Yvette Zhang</div>
-        <p style="text-align: justify; line-height: 1.6;"><strong>Abstract:</strong>This paper studies how educational assortative matching affects household income inequality in China between 2010 and 2018. During this period, people increasingly married partners with similar levels of education. Using data from the Chinese General Social Survey (CGSS), we combine counterfactual re-matching simulations with models of female labor supply to quantify the distributional effects of marital sorting. We find that educational assortative matching makes a substantial contribution to income inequality. In 2018, observed matching explains about 53\% of the gap between random matching and perfect income-based matching. In contrast to evidence from developed economies, female labor supply plays only a limited role in amplifying inequality in China. Changes in women’s labor force participation and working hours have negligible effects on household income inequality. Instead, we document a synchronization effect within households. Wives’ labor supply does not respond to husbands’ income but is strongly correlated with husbands’ working hours. As a result, assortative matching creates high-income dual-earner households whose labor inputs move together. These findings suggest that in China’s high female participation economy, inequality is driven mainly by the concentration of human capital at marriage rather than by post-marital labor supply adjustments.</p>
-      </div>
+      <section id="job-market-paper" aria-labelledby="jmp-heading">
+        <h3 class="subhead" id="jmp-heading">Job Market Paper</h3>
+        <article class="paper">
+          <h4 class="paper-title">Retail Scale, Product Assortment, and Price Competition: Evidence from the U.S. Yogurt Market</h4>
+          <p class="paper-meta">With Mengjie Li and Yvette Zhang</p>
+          <p class="paper-desc">This paper examines how retailer scale is related to product assortment and price competition in U.S. yogurt retailing.</p>
+        </article>
+      </section>
 
-      <h4 class="subhead">Work in Progress</h4>
-      <div>
-        <h5 class="paper-title">Economies of Scale, Product Composition, and Vertical Pricing in
-Food Retail</h5>
-        <div class="muted">With Mengjie Li and Yvette Zhang</div>
-        <h5 class="paper-title">When Lipstick Effects Meets Engel’s Law: How Do Households  Reallocate Spending across Economic Cycles?</h5>
-        <div class="muted">With Lingxiao Wang, Wenying Li and Yvette Zhang</div>
-      </div>
-    </section>
+      <section aria-labelledby="publications-heading">
+        <h3 class="subhead" id="publications-heading">Publications</h3>
+        <article class="paper">
+          <h4 class="paper-title">The Pink Tax: Price Discrimination, Product Differentiation, and Gender-Based Pricing in Consumer Packaged Goods</h4>
+          <p class="paper-meta">Rong Zhang and Yvette Y. Zhang (2026). <em>Southern Economic Journal</em>.</p>
+          <p class="paper-desc">This paper investigates gender-based pricing in consumer packaged goods and the roles of price discrimination and product differentiation.</p>
+          <p class="paper-link"><a href="https://doi.org/10.1002/soej.70068" target="_blank" rel="noopener noreferrer">Published article</a></p>
+        </article>
+      </section>
 
-  
+      <section aria-labelledby="working-papers-heading">
+        <h3 class="subhead" id="working-papers-heading">Working Papers</h3>
+        <article class="paper">
+          <h4 class="paper-title">Assortative Marriage, Female Labor Supply, and Household Income Inequality in China</h4>
+          <p class="paper-meta">With Song Zhou and Yvette Zhang · Under review</p>
+          <p class="paper-desc">This paper studies educational assortative marriage, married women's labor supply, and household income inequality in China.</p>
+        </article>
+        <article class="paper">
+          <h4 class="paper-title">When Lipstick Effect Meets Engel’s Law: How Do Households Reallocate Spending across Economic Cycles?</h4>
+          <p class="paper-meta">With Lingxiao Wang, Wenying Li, and Yvette Zhang</p>
+          <p class="paper-desc">This paper examines how households change spending across product categories over the economic cycle.</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="wip-heading">
+        <h3 class="subhead" id="wip-heading">Work in Progress</h3>
+        <article class="paper">
+          <h4 class="paper-title">Marrying Alike, Needing Less? Assortative Marriage and Wealth Adequacy</h4>
+          <p class="paper-meta">With Yvette Zhang</p>
+        </article>
+        <article class="paper">
+          <h4 class="paper-title">Powering AI: Data Centers and Electricity Market Outcomes</h4>
+        </article>
+      </section>
+
+      <section aria-labelledby="report-heading">
+        <h3 class="subhead" id="report-heading">Research Report</h3>
+        <article class="paper">
+          <h4 class="paper-title">Techno-Economic Analysis and Life Cycle Assessment of an Energy-Efficient Lignocellulosic Pulping Platform</h4>
+          <p class="paper-meta">In preparation · USDA-NIFA-funded research project in collaboration with Michigan State University</p>
+        </article>
+      </section>
+    </main>
   </div>
-<script>
-  (function () {
-    var el = document.getElementById('lastUpdated');
-    if (!el) return;
-    var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    var d = new Date(document.lastModified);
-    el.textContent = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
-  })();
-</script>
-  
 </body>
 </html>
-
