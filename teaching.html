@@ -4,25 +4,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rong Zhang — Teaching</title>
-  <meta name="description" content="Teaching by Rong Zhang, PhD Candidate in Agricultural Economics at Texas A&M University." />
+  <meta name="description" content="Teaching experience of Rong Zhang, Ph.D. Candidate in Agricultural Economics at Texas A&M University." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{ --bg:#ffffff; --muted:#555; --text:#111; --brand:#1f4ad7; --card:#f9f9fb; }
+    :root{--bg:#fff;--muted:#555;--text:#111;--brand:#1f4ad7;--card:#f9f9fb;--border:#ddd}
     *{box-sizing:border-box}
-    html,body{margin:0;font-family:Inter, system-ui,-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--text)}
-    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
     .container{max-width:960px;margin:0 auto;padding:28px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 24px}
     .brand{display:flex;align-items:flex-start;flex-direction:column;gap:4px}
     h1{font-size:28px;margin:0}
-    .email{font-size:15px;color:var(--text);margin:0}
-    nav{display:flex;gap:18px;flex-wrap:wrap}
-    nav a{padding:6px 8px;border-radius:8px}
-    section{padding:18px 0}
-    .list{display:grid;gap:14px;padding-left:18px}
-    footer{margin-top:24px}
+    .email{font-size:15px;color:var(--text);margin:0;line-height:1.6}
+    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{padding:6px 8px;border-radius:8px}
+    #teaching{background:var(--card);border-radius:20px;padding:24px;margin-top:0}
+    #teaching>h2{font-size:24px;margin:0 0 16px}
+    .intro{color:var(--muted);font-size:15px;line-height:1.75;margin:0 0 18px}
+    .subhead{font-size:20px;font-weight:700;margin:30px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--border)}
+    .subhead:first-of-type{margin-top:14px}
+    .level{font-size:16px;font-weight:600;margin:20px 0 10px;color:#333}
+    .course{margin:16px 0 22px}
+    .course-title{font-size:17px;font-weight:700;line-height:1.5;margin:0 0 4px}
+    .course-meta{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 5px}
+    .course-desc{font-size:15px;line-height:1.7;margin:4px 0}
+    @media(max-width:680px){.container{padding:18px}header{align-items:flex-start;flex-direction:column}#teaching{padding:18px}}
   </style>
 </head>
 <body>
@@ -30,52 +37,69 @@
     <header>
       <div class="brand">
         <h1>Rong Zhang</h1>
-        <p class="email">
-          Department of Agricultural Economics, Texas A&M University<br>
-          rongzhang@tamu.edu<br>
-          <small>Last updated: <span id="lastUpdated"></span></small>
+        <p class="email">Department of Agricultural Economics, Texas A&amp;M University<br>
+          <a href="mailto:rongzhang@tamu.edu">rongzhang@tamu.edu</a>
         </p>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
+        <a href="teaching.html" aria-current="page">Teaching</a>
+        <a href="files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </nav>
     </header>
 
-    <section id="teaching">
-  <h3>Teaching</h3>
+    <main id="teaching">
+      <h2>Teaching</h2>
+      <p class="intro">My teaching experience includes lab instruction and teaching assistance for graduate and undergraduate courses at Texas A&amp;M University.</p>
 
-  <h4 class="subhead">Graduate-Level Courses</h4>
-  <ul class="list">
-    <li><strong>INTA Capstone Research Course for Master of International Affairs Students</strong> (TA, Spring 2022):<br>Meet weekly with students to assist with programming projects and provide R programming support.</li>
-    <li><strong>AGEC 625 — Environment of Agribusiness</strong> (TA, Spring 2024):<br>Hold office hours, assist with R programming for final projects, and grade assignments.</li>
-  </ul>
+      <section aria-labelledby="lab-heading">
+        <h3 class="subhead" id="lab-heading">Lab Instructor</h3>
+        <article class="course">
+          <h4 class="course-title">INTA Capstone Research Course — Master of International Affairs Students</h4>
+          <p class="course-meta">Graduate level · Spring 2022</p>
+          <p class="course-desc">Met weekly with students to assist with research and programming projects, including R programming support.</p>
+        </article>
+      </section>
 
-  <h4 class="subhead">Undergraduate-Level Courses</h4>
-  <ul class="list">
-    <li><strong>AGEC 105 Introduction to Agricultural Economics</strong> (TA, Spring 2026):<br>Hold exam review sessions, deliver lectures, prepare practice exams and quiz questions, record solution walkthrough, hold regular office hours, proctor exams, grade assignments.</li>
-    <li><strong>AGEC 350 — Environmental and Natural Resource Economics</strong> (TA, Fall 2022 & Spring 2023):<br>Deliver review lectures, coordinate guest speakers, assist in class activities, and grade assignments and exams.</li>
-    <li><strong>AGEC 440 — Agribusiness Strategic Analysis</strong> (TA, Fall 2022 & Spring 2024)</li>
-    <li><strong>AGEC 325 — Principles of Farm and Ranch Management</strong> (TA, Fall 2024)</li>
-    <li><strong>AGEC 431 — Cases in Agribusiness Finance</strong> (TA, Fall 2023)</li>
-    <li><strong>AGEC 340 — Agribusiness Management</strong> (TA, Spring 2025)</li>
-  </ul>
-</section>
+      <section aria-labelledby="ta-heading">
+        <h3 class="subhead" id="ta-heading">Teaching Assistant</h3>
+        <h4 class="level">Graduate-Level Courses</h4>
+        <article class="course">
+          <h5 class="course-title">AGEC 625 — Environment of Agribusiness</h5>
+          <p class="course-meta">Spring 2024</p>
+          <p class="course-desc">Held office hours, assisted students with R programming for final projects, and graded assignments.</p>
+        </article>
 
-
-    
+        <h4 class="level">Undergraduate-Level Courses</h4>
+        <article class="course">
+          <h5 class="course-title">AGEC 105 — Introduction to Agricultural Economics</h5>
+          <p class="course-meta">Spring 2026</p>
+          <p class="course-desc">Delivered lectures and exam review sessions, prepared practice exams and quizzes, recorded solution walkthroughs, held office hours, and assisted with grading and exams.</p>
+        </article>
+        <article class="course">
+          <h5 class="course-title">AGEC 350 — Environmental and Natural Resource Economics</h5>
+          <p class="course-meta">Fall 2022 · Spring 2023</p>
+          <p class="course-desc">Delivered review lectures, coordinated guest speakers, assisted with class activities, and graded assignments and exams.</p>
+        </article>
+        <article class="course">
+          <h5 class="course-title">AGEC 440 — Agribusiness Strategic Analysis</h5>
+          <p class="course-meta">Fall 2022 · Spring 2024</p>
+        </article>
+        <article class="course">
+          <h5 class="course-title">AGEC 325 — Principles of Farm and Ranch Management</h5>
+          <p class="course-meta">Fall 2024</p>
+        </article>
+        <article class="course">
+          <h5 class="course-title">AGEC 431 — Cases in Agribusiness Finance</h5>
+          <p class="course-meta">Fall 2023</p>
+        </article>
+        <article class="course">
+          <h5 class="course-title">AGEC 340 — Agribusiness Management</h5>
+          <p class="course-meta">Spring 2025</p>
+        </article>
+      </section>
+    </main>
   </div>
-<script>
-  (function () {
-    var el = document.getElementById('lastUpdated');
-    if (!el) return;
-    var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    var d = new Date(document.lastModified);
-    el.textContent = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
-  })();
-</script>
-  
 </body>
 </html>
-
