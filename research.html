@@ -10,16 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
 
-    /* al-folio-inspired styling: visual changes only; text and markup unchanged */
+    /* al-folio-inspired styling: neutral background and typography */
     :root {
-      --bg: #ffffff;
-      --text: #29272f;
-      --muted: #66636d;
-      --brand: #922c83;
+      --bg: #FFFFFF;
+      --text: #29272F;
+      --muted: #5E6068;
+      --brand: #922C83;
       --brand-dark: #722065;
-      --card: #ffffff;
-      --border: #e8e5ea;
-      --wash: #fcfafd;
+      --card: #FFFFFF;
+      --border: #E5E7EB;
+      --wash: #F7F7FA;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -61,7 +61,7 @@
     nav a {
       position: relative;
       display: inline-block;
-      color: #4b4853;
+      color: #45464D;
       font-size: 14px;
       font-weight: 500;
       padding: 8px 0;
@@ -79,7 +79,7 @@
       background: var(--brand);
     }
     main { min-width: 0; }
-    h2, h3 { color: #24222a; }
+    h2, h3 { color: #29272F; }
     .muted { color: var(--muted); }
     @media (max-width: 700px) {
       .container { padding: 20px 22px 54px; }
@@ -106,12 +106,19 @@
       border-bottom: 1px solid var(--border);
     }
     .subhead:first-of-type { margin-top: 12px; }
-    .paper { margin: 17px 0 26px; padding: 0 0 6px; }
+    /* Neutral-gray entries make papers easier to scan without overpowering content. */
+    .paper {
+      background: var(--wash);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      margin: 17px 0 19px;
+      padding: 18px 22px;
+    }
     .paper-title { font-size: 18px; font-weight: 600; line-height: 1.46; margin: 0 0 7px; }
     .paper-meta { font-size: 14px; color: var(--muted); line-height: 1.7; margin: 5px 0; }
-    .paper-desc { font-size: 15px; line-height: 1.75; margin: 9px 0; color: #424049; }
+    .paper-desc { font-size: 15px; line-height: 1.75; margin: 9px 0; color: #42434A; }
     .paper-link { font-size: 14px; font-weight: 500; margin: 9px 0; }
-    @media (max-width: 700px) { #research { padding: 0; } #research > h2 { font-size: 27px; } .subhead { font-size: 20px; } }
+    @media (max-width: 700px) { #research { padding: 0; } #research > h2 { font-size: 27px; } .subhead { font-size: 20px; } .paper { padding: 15px 17px; } }
   </style>
 </head>
 <body>
